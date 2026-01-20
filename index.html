@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Album Section -->
+        <div class="album-section">
+            <div class="album-cover">
+                <img src="album-cover.jpg" alt="Album Cover" id="albumImage">
+            </div>
+            <h1 class="album-title">neumilenio</h1>
+        </div>
+
+        <!-- Countdown Section -->
+        <div class="countdown-section">
+            <div class="countdown">
+                <div class="time-unit">
+                    <div class="number" id="hours">00</div>
+                    <div class="label">HOURS</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-unit">
+                    <div class="number" id="minutes">00</div>
+                    <div class="label">MINUTES</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-unit">
+                    <div class="number" id="seconds">00</div>
+                    <div class="label">SECONDS</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Email Signup Section -->
+        <div class="email-section">
+            <h2>Get Notified</h2>
+            <p>Sign up to receive the album when it's released</p>
+            <form id="emailForm">
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="confirmMessage" class="confirm-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

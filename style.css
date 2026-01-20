@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Album Section */
+.album-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.album-cover {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 30px;
+    border: 2px solid #ffffff;
+    box-shadow: none;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.album-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* Countdown Section */
+.countdown-section {
+    margin-bottom: 100px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.time-unit {
+    text-align: center;
+}
+
+.number {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: none;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0;
+    border: 4px solid #ffffff;
+    padding: 30px 40px;
+    background-color: #000000;
+    box-shadow: none;
+    min-width: 220px;
+}
+
+.label {
+    font-size: 1rem;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.separator {
+    font-size: 6rem;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0 5px;
+}
+
+/* Email Section */
+.email-section {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 60px 20px;
+    border-top: 1px solid #ffffff;
+    margin-top: 40px;
+}
+
+.email-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.email-section p {
+    margin-bottom: 30px;
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+#emailForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#emailInput {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#emailInput:focus {
+    border-color: #cccccc;
+}
+
+#emailInput::placeholder {
+    color: #666666;
+}
+
+button {
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.confirm-message {
+    color: #cccccc;
+    font-size: 0.9rem;
+    min-height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .number {
+        font-size: 4rem;
+        min-width: 150px;
+        padding: 15px 20px;
+    }
+
+    .separator {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .album-cover {
+        width: 300px;
+        height: 300px;
+    }
+
+    .album-title {
+        font-size: 1.8rem;
+        letter-spacing: 4px;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .number {
+        font-size: 3rem;
+        min-width: 120px;
+        padding: 10px 15px;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .label {
+        font-size: 0.8rem;
+    }
+
+    #emailForm {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .album-cover {
+        width: 250px;
+        height: 250px;
+    }
+
+    .number {
+        font-size: 2.5rem;
+        min-width: 100px;
+    }
+}
