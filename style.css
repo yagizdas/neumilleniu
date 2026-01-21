@@ -9,6 +9,21 @@ body {
     background-color: #000000;
     color: #ffffff;
     overflow-x: hidden;
+    position: relative;
+}
+
+/* Background Video */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.4;
 }
 
 .container {
@@ -17,6 +32,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Album Section */
